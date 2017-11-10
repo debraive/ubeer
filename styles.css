@@ -1,0 +1,28 @@
+*{
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  color: black;
+}
+
+#main{
+  background-image: url(https://cdn.dribbble.com/users/146798/screenshots/2090669/dribbble.png);
+  background-size: 10%;
+  height: 1000px;
+}
+
+table {
+ margin: 0 auto;
+ border-width:0px;
+ border-style:solid;
+ border-radius: 5px;
+ border-color:#FFFFFF;
+ width:60%;
+ background-color: #fbca08;
+ }
+td {
+ border-width:1px;
+ border-left-style: dotted;
+ border-bottom-style: dotted;
+ border-color:#FFFFFF;
+
+ }
