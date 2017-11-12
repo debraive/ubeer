@@ -13,7 +13,7 @@
 <a href="./adminHome.php"><h1 class="back">Retour</h1></a>
 <div id="main">
     <div class="content">
-        <form id="editForm" action="../index.php" method="post">
+        <form id="editForm" action="../app/edit.php" method="post">
             <h1>Edit User</h1>
             <input type="email" value="<?= $_POST['mail'] ?>" name="mail">
             <input type="hidden" value="<?= $_POST['id'] ?>" name="id">
