@@ -15,11 +15,12 @@
     <div class="content">
         <form id="editForm" action="../app/edit.php" method="post">
             <h1>Edit User</h1>
-            <input type="email" value="<?= $_POST['mail'] ?>" name="mail">
-            <input type="hidden" value="<?= $_POST['id'] ?>" name="id">
+            <input type="email" value="<?= isset($_POST['mail']) ? $_POST['mail'] : "" ?>" name="mail">
+            <input type="hidden" value="<?= isset($_POST['id']) ? $_POST['id'] : ""?>" name="id">
             <div>
                 <input type="submit" value="save changes">
             </div>
+            <h4 id="editFormMsg"><?= isset($_GET['message']) ? $_GET['message'] : "" ?></h4>
         </form>
     </div>
 </div>

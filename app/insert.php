@@ -13,7 +13,7 @@ if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
     if ($req->rowCount() == 1) {
         $message = "You are already registred ;)";
         header("location:../index.php?message=" . $message);
-        die();
+        exit();
     }
 
     $req = $bd->prepare("INSERT INTO Users (Mail)VALUES  (?)");
