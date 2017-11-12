@@ -1,24 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800');
+
 * {
     font-family: 'Montserrat';
     margin: 0 auto;
 }
 
-body{
-    height:100vh;
+body {
+    height: 100vh;
 }
 
-#pageTitle{
-    margin-left:20px;
-    margin-top:20px;
+#pageTitle {
+    margin-left: 20px;
+    margin-top: 20px;
 }
-.back{
+
+.back {
     display: block;
     position: absolute;
     right: 0;
     top: 20px;
     margin-right: 20px;
-    margin-bottom:50px;
+    margin-bottom: 50px;
     cursor: pointer;
 }
 
@@ -29,7 +31,7 @@ body{
     border: solid 20px white;
 }
 
-.content{
+.content {
     padding-top: 200px;
 }
 
@@ -39,7 +41,7 @@ table {
     border: 0px solid #FFFFFF;
     background-color: #fbca08;
     padding: 20px;
-    font-weight:600;
+    font-weight: 600;
 }
 
 td {
@@ -48,7 +50,6 @@ td {
     border-left-style: dotted;
     padding: 4px;
 }
-
 
 .btn {
     margin: 0 auto;
@@ -59,16 +60,23 @@ td {
     border: none;
 }
 
-.tableau form{
+.tableau form {
     display: inline-block;
 }
-.tableau .actions{
-    padding-left:5px;
+
+.tableau .actions {
+    padding-left: 5px;
 }
 
-#usersTd{
-    width:60%;
+#usersTd {
+    width: 60%;
     min-width: 0px;
+}
+
+
+#editFormMsg {
+    margin-top:20px;
+    text-align: center;
 }
 
 #editForm {
@@ -86,9 +94,9 @@ td {
 
 #editForm h1 {
     color: #353535;
-    font-weight:700;
+    font-weight: 700;
     text-align: center;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 #editForm input[type="email"] {
@@ -108,7 +116,7 @@ td {
     border-radius: 5px;
 }
 
-.tableau button{
+.tableau button {
     border: none;
     text-transform: uppercase;
     padding: 10px;
@@ -119,12 +127,12 @@ td {
     border-radius: 5px;
 }
 
-#titlesRow th{
+#titlesRow th {
     height: 50px;
 }
 
 
-@media screen and (max-width:650px) {
+@media screen and (max-width: 650px) {
 
     #editForm {
         width: 90%;
