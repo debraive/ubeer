@@ -9,13 +9,19 @@
     <title>Document</title>
 </head>
 <body>
+<h1 id="pageTitle">"Edit Page"</h1>
+<a href="./adminHome.php"><h1 class="back">Retour</h1></a>
 <div id="main">
-
-    <form action="../app/edit.php" method="post">
-        <input type="text" value="<?= $_POST['mail'] ?>" name="mail">
-        <input type="hidden" value="<?= $_POST['id'] ?>" name="id">
-        <input type="submit" value="save changes">
-    </form>
+    <div class="content">
+        <form id="editForm" action="../index.php" method="post">
+            <h1>Edit User</h1>
+            <input type="email" value="<?= $_POST['mail'] ?>" name="mail">
+            <input type="hidden" value="<?= $_POST['id'] ?>" name="id">
+            <div>
+                <input type="submit" value="save changes">
+            </div>
+        </form>
+    </div>
 </div>
 </body>
 </html>

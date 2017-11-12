@@ -1,28 +1,132 @@
-*{
-  font-family: 'Montserrat';
-  text-transform: uppercase;
-  color: black;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800');
+* {
+    font-family: 'Montserrat';
+    margin: 0 auto;
 }
 
-#main{
-  background-image: url(https://cdn.dribbble.com/users/146798/screenshots/2090669/dribbble.png);
-  background-size: 10%;
-  height: 1000px;
+body{
+    height:100vh;
+}
+
+#pageTitle{
+    margin-left:20px;
+    margin-top:20px;
+}
+.back{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    margin-right: 20px;
+    margin-bottom:50px;
+    cursor: pointer;
+}
+
+#main {
+    background-image: url(https://cdn.dribbble.com/users/146798/screenshots/2090669/dribbble.png);
+    background-size: 20%;
+    height: 100%;
+    border: solid 20px white;
+}
+
+.content{
+    padding-top: 200px;
 }
 
 table {
- margin: 0 auto;
- border-width:0px;
- border-style:solid;
- border-radius: 5px;
- border-color:#FFFFFF;
- width:60%;
- background-color: #fbca08;
- }
-td {
- border-width:1px;
- border-left-style: dotted;
- border-bottom-style: dotted;
- border-color:#FFFFFF;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 0px solid #FFFFFF;
+    background-color: #fbca08;
+    padding: 20px;
+    font-weight:600;
+}
 
- }
+td {
+    border: 1px #FFFFFF;
+    border-bottom-style: dotted;
+    border-left-style: dotted;
+    padding: 4px;
+}
+
+
+.btn {
+    margin: 0 auto;
+    display: block;
+    text-transform: uppercase;
+    background: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.tableau form{
+    display: inline-block;
+}
+.tableau .actions{
+    padding-left:5px;
+}
+
+#usersTd{
+    width:60%;
+    min-width: 0px;
+}
+
+#editForm {
+    padding: 40px 0;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: #fbca08;
+    width: 30%;
+}
+
+#editForm input {
+    margin: 0 auto;
+    display: block;
+}
+
+#editForm h1 {
+    color: #353535;
+    font-weight:700;
+    text-align: center;
+    margin-bottom:20px;
+}
+
+#editForm input[type="email"] {
+
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+}
+
+#editForm input[type="submit"] {
+    border: none;
+    margin-top: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    color: white;
+    background: #353535;
+    border-radius: 5px;
+}
+
+.tableau button{
+    border: none;
+    text-transform: uppercase;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    background: #353535;
+    border-radius: 5px;
+}
+
+#titlesRow th{
+    height: 50px;
+}
+
+
+@media screen and (max-width:650px) {
+
+    #editForm {
+        width: 90%;
+    }
+}
