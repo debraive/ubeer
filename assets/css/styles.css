@@ -12,6 +12,7 @@ body {
 #pageTitle {
     margin-left: 20px;
     margin-top: 20px;
+    color: black;
 }
 
 .back {
@@ -22,6 +23,7 @@ body {
     margin-right: 20px;
     margin-bottom: 50px;
     cursor: pointer;
+    color: black;
 }
 
 #main {

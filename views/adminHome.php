@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<h1 id="pageTitle">"Nos inscrits"</h1>
+<h1 id="pageTitle">"subscriptions"</h1>
 <a href="../index.php"><h1 class="back">Go To Website</h1></a>
 <div id="main">
     <div class="content">
@@ -37,7 +37,7 @@
                             <form action='../app/delete.php' method='post'>
                                 <button onclick='this.form.submit()'>delete</button>
                                 <input type='hidden' value='{$user['Id']}' name='id'>
-                             </form>    
+                             </form>
                         </div>
                     </td>";
                     echo "</tr>";
